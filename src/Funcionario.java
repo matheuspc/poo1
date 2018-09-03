@@ -1,29 +1,22 @@
 import java.util.Scanner;
 
-public class Funcionario {
+public class Funcionario extends Pessoa{
 
-    String nomeFunc;
     String enderecoFunc;
     String telefoneFunc;
-    String cpfFunc;
     String ctpsFunc;
     double salarioFunc;
 
     public void lerDados (){
+        super.lerDados();
 
         Scanner s = new Scanner(System.in);
-
-        System.out.println("Digite o nome do funcionário:");
-        this.nomeFunc = s.nextLine();
 
         System.out.println("Digite o endereço do funcionário:");
         this.enderecoFunc = s.nextLine();
 
         System.out.println("Digite o telefone do funcionário:");
         this.telefoneFunc = s.nextLine();
-
-        System.out.println("Digite o CPF do funcionário:");
-        this.cpfFunc = s.nextLine();
 
         System.out.println("Digite a CTPS do funcionário:");
         this.ctpsFunc = s.nextLine();
@@ -35,12 +28,11 @@ public class Funcionario {
 
     public void mostrarDados (){
 
-        System.out.println("Nome: " + this.nomeFunc);
-        System.out.println("Nome: " + this.enderecoFunc);
-        System.out.println("Nome: " + this.telefoneFunc);
-        System.out.println("Nome: " + this.cpfFunc);
-        System.out.println("Nome: " + this.ctpsFunc);
-        System.out.println("Nome: " + this.salarioFunc);
+        super.mostrarDados();
+        System.out.println("Endereço do Funcioniário: " + this.enderecoFunc);
+        System.out.println("Telefone do Funcioniário: " + this.telefoneFunc);
+        System.out.println("CTPS do Funcioniário: " + this.ctpsFunc);
+        System.out.println("Salário do Funcioniário: " + this.salarioFunc);
 
 
     }

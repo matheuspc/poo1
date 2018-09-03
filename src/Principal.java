@@ -5,11 +5,13 @@ public class Principal {
         //c1.lerDados();
         //c1.mostrarDados();
 
-        Disciplina d1 = new Disciplina();
-        d1.lerDados();
-        d1.mostrarDados();
+        //Disciplina d1 = new Disciplina();
+        //d1.lerDados();
+        //d1.mostrarDados();
 
-
+        Aluno f1 = new AlunoPosGraduacao();
+        f1.lerDados();
+        f1.mostrarDados();
     }
 
 }

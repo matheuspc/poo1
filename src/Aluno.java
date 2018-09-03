@@ -1,23 +1,25 @@
 import java.util.Scanner;
 
-public class Aluno {
+public class Aluno extends Pessoa {
 
-    String nomeAluno;
     String matriculaAluno;
-    String cpfAluno;
     Curso curso;
 
     public void lerDados(){
-
+        super.lerDados();
         Scanner s = new Scanner(System.in);
 
-        System.out.println("Digite o nome do aluno:");
-        this.nomeAluno = s.nextLine();
+        this.curso = new Curso();
+        this.curso.lerDados();
 
         System.out.println("Digite a matrícula do aluno:");
         this.matriculaAluno = s.nextLine();
 
-        System.out.println("Digite o CPF do aluno:");
-        this.cpfAluno = s.nextLine();
+    }
+
+    public void mostrarDados (){
+        super.mostrarDados();
+        this.curso.mostrarDados();
+        System.out.println("Matrícula do aluno: " + this.matriculaAluno);
     }
 }
