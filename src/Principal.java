@@ -12,6 +12,10 @@ public class Principal {
         Aluno f1 = new AlunoPosGraduacao();
         f1.lerDados();
         f1.mostrarDados();
+
+        //if (ValidaCPF.isCPF(f1.getCpfPessoa()))
+          //  System.out.printf("%s\n", ValidaCPF.imprimeCPF(f1.getCpfPessoa()));
+        //else System.out.printf("Erro, CPF invalido !!!\n");
     }
 
 }
